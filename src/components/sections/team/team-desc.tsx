@@ -114,7 +114,7 @@ export default function TeamDesc() {
                   style={{
                     background: 'white',
                     borderRadius: 16,
-                    padding: '2.5rem 2rem',
+                    padding: 'clamp(1.5rem, 4vw, 2.5rem) clamp(1.25rem, 3.5vw, 2rem)',
                     boxShadow: '0 10px 32px rgba(16,34,56,.06)',
                     border: '1px solid rgba(20,41,92,.07)',
                   }}
@@ -156,7 +156,7 @@ export default function TeamDesc() {
                   <div
                     style={{
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+                      gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
                       gap: '1.5rem',
                     }}
                   >

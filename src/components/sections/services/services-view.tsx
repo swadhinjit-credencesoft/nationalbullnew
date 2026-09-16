@@ -114,15 +114,15 @@ export default function ServicesView() {
                 margin: '0 auto',
               }}
             >
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                  alignItems: 'stretch',
-                }}
-              >
+<div
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
+                    alignItems: 'stretch',
+                  }}
+                >
                 {/* Image side */}
-                <div style={{ position: 'relative', minHeight: 340, background: 'var(--navy)' }}>
+                <div style={{ position: 'relative', minHeight: 'clamp(240px, 45vw, 340px)', background: 'var(--navy)' }}>
                   <img
                     src={activeService.img}
                     alt={activeService.alt}
@@ -217,7 +217,7 @@ export default function ServicesView() {
                       padding: 0,
                       margin: 0,
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                      gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))',
                       gap: '.65rem .9rem',
                     }}
                   >

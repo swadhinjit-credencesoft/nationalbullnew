@@ -46,7 +46,7 @@ export default function FranchisePage() {
                   background: 'linear-gradient(135deg, rgba(29, 72, 189, 0.15) 0%, rgba(2, 4, 15, 0.9) 100%)',
                   border: '1px solid rgba(82, 197, 182, 0.3)',
                   borderRadius: '1.25rem',
-                  padding: '2.5rem',
+                  padding: 'clamp(1.5rem, 4vw, 2.5rem)',
                   marginBottom: '3.5rem',
                   boxShadow: '0 15px 35px rgba(0, 0, 0, 0.4)',
                 }}
@@ -60,7 +60,7 @@ export default function FranchisePage() {
                 <p style={{ color: 'rgba(255, 255, 255, 0.85)', fontSize: '1rem', lineHeight: '1.75', marginBottom: '1.5rem' }}>
                   National Bulls Investment Services brings institutional-grade capital market access to retail and HNI investors in Navi Mumbai through its strong franchise association with <strong>Progressive Share Brokers Pvt. Ltd.</strong>
                 </p>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingTop: '1.5rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '1rem', borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingTop: '1.5rem' }}>
                   <div>
                     <span style={{ color: 'rgba(255, 255, 255, 0.5)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block' }}>SEBI Registration</span>
                     <strong style={{ color: '#00f2fe', fontSize: '0.95rem' }}>INZ000170639</strong>
@@ -85,7 +85,7 @@ export default function FranchisePage() {
               Why Invest Through Our Franchise Network
             </h3>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.5rem', marginBottom: '3.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '1.5rem', marginBottom: '3.5rem' }}>
               {benefits.map((b, i) => {
                 const Icon = b.icon;
                 return (

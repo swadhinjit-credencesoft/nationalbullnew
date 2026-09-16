@@ -52,7 +52,7 @@ export default function SipCalculatorPage() {
       <section className="section-padding" style={{ background: '#02040f', color: '#ffffff' }}>
         <div className="container-wide">
           <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '2.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '2.5rem' }}>
               {/* Inputs */}
               <Reveal>
                 <div

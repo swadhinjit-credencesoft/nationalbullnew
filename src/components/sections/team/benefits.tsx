@@ -66,7 +66,7 @@ export default function TeamBenefits() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
               gap: '1.2rem',
             }}
           >

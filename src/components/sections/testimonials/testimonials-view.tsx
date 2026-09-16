@@ -117,7 +117,7 @@ export default function TestimonialsView() {
               style={{
                 background: 'white',
                 borderRadius: 16,
-                padding: '1.75rem 2rem',
+                padding: 'clamp(1.4rem, 4vw, 1.75rem)',
                 boxShadow: '0 8px 30px rgba(16,34,56,.06)',
                 border: '1px solid rgba(20,41,92,.08)',
                 display: 'flex',
@@ -168,7 +168,7 @@ export default function TestimonialsView() {
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
                 gap: '1.5rem',
               }}
             >
@@ -178,7 +178,7 @@ export default function TestimonialsView() {
                   style={{
                     background: 'white',
                     borderRadius: 14,
-                    padding: '1.8rem',
+                    padding: 'clamp(1.4rem, 4vw, 1.8rem)',
                     boxShadow: '0 6px 24px rgba(16,34,56,.05)',
                     border: '1px solid rgba(20,41,92,.06)',
                     display: 'flex',
@@ -268,7 +268,7 @@ export default function TestimonialsView() {
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
                 gap: '1.5rem',
               }}
             >
@@ -278,7 +278,7 @@ export default function TestimonialsView() {
                   style={{
                     background: 'white',
                     borderRadius: 16,
-                    padding: '1.75rem',
+                    padding: 'clamp(1.4rem, 4vw, 1.75rem)',
                     boxShadow: '0 6px 24px rgba(16,34,56,.06)',
                     border: '1px solid rgba(20,41,92,.07)',
                     display: 'flex',
@@ -369,7 +369,7 @@ export default function TestimonialsView() {
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 360px), 1fr))',
                 gap: '2rem',
               }}
             >
@@ -379,7 +379,7 @@ export default function TestimonialsView() {
                   style={{
                     background: 'white',
                     borderRadius: 16,
-                    padding: '2.2rem 2rem',
+                    padding: 'clamp(1.6rem, 4.5vw, 2.2rem)',
                     boxShadow: '0 8px 30px rgba(16,34,56,.06)',
                     border: '1px solid rgba(20,41,92,.07)',
                     display: 'flex',

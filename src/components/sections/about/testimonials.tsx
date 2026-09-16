@@ -17,7 +17,7 @@ export default function TestimonialsSection() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+        <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))' }}>
           {testimonials.map((t) => (
             <div
               key={t.name}

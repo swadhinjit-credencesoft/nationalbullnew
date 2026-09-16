@@ -40,7 +40,7 @@ export default function RegulatoryDisclosureModal({ isOpen, onClose }: Disclosur
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '1.5rem',
+        padding: 'clamp(1rem, 3vw, 1.5rem)',
         background: 'rgba(10, 25, 42, 0.82)',
         backdropFilter: 'blur(6px)',
       }}
@@ -118,8 +118,9 @@ export default function RegulatoryDisclosureModal({ isOpen, onClose }: Disclosur
         {/* Modal Body */}
         <div
           style={{
-            padding: '2rem',
+            padding: 'clamp(1.25rem, 4vw, 2rem)',
             overflowY: 'auto',
+            overflowX: 'hidden',
             display: 'flex',
             flexDirection: 'column',
             gap: '1.75rem',
@@ -209,7 +210,7 @@ export default function RegulatoryDisclosureModal({ isOpen, onClose }: Disclosur
                 listStyle: 'none',
                 margin: 0,
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
                 gap: '.6rem .9rem',
               }}
             >
@@ -232,7 +233,7 @@ export default function RegulatoryDisclosureModal({ isOpen, onClose }: Disclosur
           </div>
 
           {/* Grievance Redressal & Investor Charter */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '1.5rem' }}>
             <div style={{ background: '#f1f5f9', borderRadius: 10, padding: '1.2rem' }}>
               <h5 style={{ color: 'var(--navy)', fontSize: '.9rem', fontWeight: 800, margin: '0 0 .4rem' }}>
                 Grievance Redressal
@@ -281,7 +282,7 @@ export default function RegulatoryDisclosureModal({ isOpen, onClose }: Disclosur
               style={{
                 border: '1px solid #e2e8f0',
                 borderRadius: 10,
-                overflow: 'hidden',
+                overflowX: 'auto',
               }}
             >
               <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.82rem' }}>

@@ -133,7 +133,7 @@ export default function ContactDetailsForm() {
                 style={{
                   background: '#ffffff',
                   borderRadius: '16px',
-                  padding: '2.8rem 2.5rem',
+                  padding: 'clamp(1.6rem, 5vw, 2.8rem) clamp(1.4rem, 4vw, 2.5rem)',
                   boxShadow: '0 16px 45px rgba(14, 34, 70, 0.08)',
                   border: '1px solid rgba(14, 34, 70, 0.08)',
                 }}

@@ -12,7 +12,7 @@ interface PageHeaderProps {
 // Shared hero/page-header used by the inner pages (services, about, team, contact).
 export default function PageHeader({ title, crumb, description, image }: PageHeaderProps) {
   return (
-    <section className="hero page-header" style={{ minHeight: 'auto', padding: '140px 0 50px' }}>
+    <section className="hero page-header" style={{ minHeight: 'auto', padding: 'clamp(120px, 15vw, 140px) 0 clamp(38px, 6vw, 50px)' }}>
       {image && <img src={image} alt="" className="hero-image" />}
       <div className="container-wide" style={{ position: 'relative', zIndex: 2 }}>
         <p
