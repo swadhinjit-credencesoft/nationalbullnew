@@ -1,0 +1,135 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #070d1e;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+button, a, input, select, textarea { font-family: inherit; font-size: inherit; }
+img { max-width: 100%; height: auto; }
+a { text-decoration: none; color: inherit; }
+
+/* Headings — Crisp, Luxury Geometric Display (Outfit 800/900) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #070d1e;
+}
+
+::selection { background: rgba(37, 99, 235, 0.2); color: #030718; }
+::-webkit-scrollbar { height: 6px; width: 6px; }
+::-webkit-scrollbar-track { background: #f8fafc; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* ── Layout containers ── */
+.container { width: min(1220px, calc(100% - 48px)); margin-inline: auto; }
+.container-wide { width: min(1240px, calc(100% - 48px)); margin-inline: auto; }
+
+body { background-color: #ffffff; color: #070d1e; }
+
+.site-shell { overflow: hidden; background: #ffffff; color: #070d1e; }
+.site-shell button, .site-shell a { -webkit-tap-highlight-color: transparent; }
+
+/* ── Typography helpers ── */
+.body-copy {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #475569;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+.orange-text { color: #2563eb; }
+
+/* ── Cinematic Page Header ── */
+.page-header {
+  background: linear-gradient(135deg, #02040f 0%, #030718 45%, #08112c 100%);
+  min-height: 330px;
+  padding-top: 140px;
+  padding-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.page-header img.page-header-bg {
+  height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; opacity: 0.18;
+}
+.page-header::before {
+  background: radial-gradient(circle at 75% 20%, rgba(37, 99, 235, 0.45), transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(0, 242, 254, 0.25), transparent 45%);
+  content: ''; inset: 0; position: absolute; z-index: 1; pointer-events: none;
+}
+.page-header .container, .page-header .container-wide { position: relative; z-index: 2; }
+.page-header h1 {
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  line-height: 1.12;
+  margin-bottom: 1rem;
+}
+.page-header p {
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 680px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 400;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ── Luminous Eyebrow Pill ── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2563eb;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: rgba(37, 99, 235, 0.08);
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 1.5px solid rgba(37, 99, 235, 0.22);
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.08);
+}
+.eyebrow::before { display: none; }
+
+/* ── Section Titles — Bold & Cinematic ── */
+.section-title {
+  color: #070d1e;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2.1rem, 3.8vw, 3.3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+/* ── Generic section padding utility ── */
+.section-padding {
+  padding: 6rem 0;
+}
+@media (max-width: 760px) {
+  .section-padding { padding: 4rem 0; }
+}

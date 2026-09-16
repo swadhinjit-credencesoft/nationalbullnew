@@ -1,0 +1,109 @@
+:root {
+  /* ── Semantic Tailwind Tokens — Bright Ultra-Premium Fintech ── */
+  --background: 0 0% 100%;
+  --foreground: 224 71% 4%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 221 83% 53%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 71% 4%;
+  --card-border: 220 13% 91%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 224 71% 4%;
+  --popover-border: 220 13% 91%;
+  --primary: 221 83% 53%;        /* #2563eb Electric Royal Blue */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 224 76% 12%;      /* #071330 Deep Midnight Blue */
+  --secondary-foreground: 0 0% 100%;
+  --muted: 220 14% 96%;
+  --muted-foreground: 220 9% 46%;
+  --accent: 187 92% 45%;         /* #06b6d4 Radiant Cyan */
+  --accent-foreground: 224 71% 4%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  /* ── Ultra-Premium Modern Typography ── */
+  --app-font-display: 'Outfit', 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --app-font-sans: 'Plus Jakarta Sans', 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --app-font-serif: 'Cinzel', 'Prata', Georgia, serif;
+  --app-font-mono: 'SFMono-Regular', Consolas, monospace;
+
+  --radius: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --tracking-normal: -0.015em;
+  --tracking-tight: -0.035em;
+  --spacing: 0.25rem;
+
+  /* ── Cinematic Luminous Color Palette ── */
+  --brand-blue: #2563eb;         /* electric royal blue */
+  --brand-blue-deep: #1d48bd;    /* classic royal blue */
+  --brand-blue-light: rgba(37, 99, 235, 0.1);
+  --brand-blue-glow: rgba(37, 99, 235, 0.35);
+
+  --brand-navy: #030718;         /* deep obsidian space */
+  --brand-navy-card: #08112c;    /* rich dark container */
+  --brand-navy-soft: #0e1e4a;    /* glowing navy layer */
+
+  --brand-cyan: #00f2fe;         /* radiant neon cyan */
+  --brand-teal: #06b6d4;         /* bright cyan teal */
+  --brand-teal-light: rgba(6, 182, 212, 0.12);
+
+  --brand-gold: #f59e0b;         /* luminous amber gold */
+  --brand-gold-bright: #fbbf24;
+  --brand-gold-sun: #fde047;
+
+  /* Compatibility aliases */
+  --navy: #030718;
+  --navy-deep: #02040f;
+  --navy-soft: #08112c;
+  --navy-light: #1e3a8a;
+
+  --orange: #2563eb;             /* primary electric blue */
+  --orange-bright: #3b82f6;
+  --orange-dark: #1d4ed8;
+
+  --yellow: #00f2fe;             /* glowing cyan */
+  --yellow-soft: #38bdf8;
+  --gold: #f59e0b;
+
+  --cream: #ffffff;
+  --sand: #f8fafc;
+  --surface: #ffffff;
+  --surface-alt: #f1f5f9;
+
+  --ink: #070d1e;
+  --ink-light: #1e293b;
+  --ink-muted: #475569;
+
+  --line: #e2e8f0;
+  --line-light: #f1f5f9;
+  --white: #ffffff;
+
+  /* ── Cinematic 3D Ambient Glows & Shadows ── */
+  --shadow-subtle: 0 2px 8px -2px rgba(2, 6, 23, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 12px 36px -12px rgba(2, 6, 23, 0.08), 0 0 0 1px rgba(226, 232, 240, 0.85);
+  --shadow-hover: 0 24px 54px -14px rgba(37, 99, 235, 0.22), 0 0 0 1px rgba(37, 99, 235, 0.3);
+  --shadow-glow: 0 0 50px rgba(37, 99, 235, 0.35);
+  --shadow-glow-cyan: 0 0 45px rgba(0, 242, 254, 0.3);
+  --shadow-glow-gold: 0 0 45px rgba(245, 158, 11, 0.35);
+}
+
+.dark {
+  --background: 224 71% 4%;
+  --foreground: 210 40% 98%;
+  --card: 224 76% 8%;
+  --card-foreground: 210 40% 98%;
+  --border: 224 40% 18%;
+  --input: 224 40% 18%;
+  --muted: 224 40% 14%;
+  --muted-foreground: 215 20% 65%;
+  --popover: 224 76% 8%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 221 83% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 40% 98%;
+  --secondary-foreground: 224 71% 4%;
+}
+
