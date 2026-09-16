@@ -1,7 +1,7 @@
 'use client';
 
 import HeroSection from '@/components/sections/home/hero';
-import TickerRibbonSection from '@/components/sections/home/ticker-ribbon';
+// import TickerRibbonSection from '@/components/sections/home/ticker-ribbon';
 import PartnersSection from '@/components/sections/home/partners';
 import ScrollStatementSection from '@/components/sections/home/scroll-statement';
 import ServicesSection from '@/components/sections/home/services';
@@ -16,7 +16,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <TickerRibbonSection />
+      {/* <TickerRibbonSection /> */}
       <PartnersSection />
       <ScrollStatementSection />
       <ServicesSection />

@@ -174,43 +174,6 @@ export default function HeroSection() {
       </div>
 
       {/* Animated Scroll Down Indicator */}
-      <motion.a
-        href="#partners"
-        aria-label="Scroll to next section"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.6 }}
-        style={{
-          position: 'absolute',
-          bottom: '24px',
-          right: 'max(24px, calc((100% - 1240px) / 2))',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '.55rem',
-          color: '#ffffff',
-          textDecoration: 'none',
-          fontSize: '.74rem',
-          fontWeight: 800,
-          letterSpacing: '.14em',
-          textTransform: 'uppercase',
-          zIndex: 10,
-          background: 'rgba(255, 255, 255, 0.12)',
-          backdropFilter: 'blur(12px)',
-          padding: '.5rem 1.1rem',
-          borderRadius: '999px',
-          border: '1.5px solid rgba(0, 242, 254, 0.4)',
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 242, 254, 0.25)',
-          fontFamily: 'Outfit, sans-serif',
-        }}
-      >
-        <span>SCROLL DOWN</span>
-        <motion.div
-          animate={{ y: [0, 4, 0] }}
-          transition={{ repeat: Infinity, duration: 1.4, ease: 'easeInOut' }}
-        >
-          <ChevronDown size={15} color="#00f2fe" />
-        </motion.div>
-      </motion.a>
 
       {/* Slide navigation dots */}
       <div className="hero-slide-dots" role="tablist" aria-label="Hero Slides">
